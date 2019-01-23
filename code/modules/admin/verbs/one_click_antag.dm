@@ -258,7 +258,7 @@
 
 		var/obj/effect/landmark/nuke_spawn = locate("landmark*Nuclear-Bomb")
 		var/obj/effect/landmark/closet_spawn = locate("landmark*Syndicate-Uplink")
-		var/nuke_code = "[rand(10000, 99999)]"
+		var/nuke_code = random_nukecode()
 
 		if(nuke_spawn)
 			var/obj/machinery/nuclearbomb/the_bomb = new /obj/machinery/nuclearbomb(nuke_spawn.loc)

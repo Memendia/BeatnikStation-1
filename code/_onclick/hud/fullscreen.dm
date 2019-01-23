@@ -51,9 +51,9 @@
 		mymob.client.screen |= screens[category]
 
 /obj/screen/fullscreen
-	icon = 'icons/mob/screen_full.dmi'
+	icon = 'icons/mob/screen_fullwide.dmi' // screen_full.dmi is regular || screen_fullwide.dmi is widescreen
 	icon_state = "default"
-	screen_loc = "CENTER-7,CENTER-7"
+	screen_loc = "CENTER-9,CENTER-7" // "CENTER-7,CENTER-7" is for regular || "CENTER-9,CENTER-7" is widescreen
 	layer = FULLSCREEN_LAYER
 	mouse_opacity = 0
 	var/severity = 0

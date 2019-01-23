@@ -74,7 +74,7 @@
 	var/obj/effect/landmark/uplinklocker = locate("landmark*Syndicate-Uplink")	//i will be rewriting this shortly
 	var/obj/effect/landmark/nuke_spawn = locate("landmark*Nuclear-Bomb")
 
-	var/nuke_code = "[rand(10000, 99999)]"
+	var/nuke_code = random_nukecode()
 	var/leader_selected = 0
 	var/agent_number = 1
 	var/spawnpos = 1
