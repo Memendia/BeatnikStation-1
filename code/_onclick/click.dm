@@ -324,11 +324,11 @@
 		else		dir = WEST
 
 /obj/screen/click_catcher
-	icon = 'icons/mob/screen_full.dmi'
+	icon = 'icons/mob/screen_fullwide.dmi' // screen_full.dmi is regular || screen_fullwide.dmi is widescreen
 	icon_state = "passage0"
 	plane = CLICKCATCHER_PLANE
 	mouse_opacity = 2
-	screen_loc = "CENTER-7,CENTER-7"
+	screen_loc = "CENTER-9,CENTER-7" // "CENTER-7,CENTER-7" is for regular || "CENTER-9,CENTER-7" is widescreen
 
 /obj/screen/click_catcher/Click(location, control, params)
 	var/list/modifiers = params2list(params)
